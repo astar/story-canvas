@@ -1,0 +1,193 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "title-1",
+      "type": "text",
+      "x": 100, "y": 100,
+      "width": 900, "height": 40,
+      "text": "Kreatin pro mozek — South Park storyboard",
+      "fontFamily": 1,
+      "fontSize": 28,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "strokeColor": "#1e293b"
+    },
+
+    {
+      "id": "card-1",
+      "type": "rectangle",
+      "x": 100, "y": 200,
+      "width": 240, "height": 140,
+      "strokeColor": "#92400e",
+      "backgroundColor": "#fef3c7",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roundness": {"type": 3},
+      "roughness": 1
+    },
+    {
+      "id": "label-1",
+      "type": "text",
+      "x": 110, "y": 235,
+      "width": 220, "height": 70,
+      "text": "Kreatin se prodává\njako brain booster\n(Huberman cocktail)",
+      "fontFamily": 1,
+      "fontSize": 18,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "strokeColor": "#1e293b"
+    },
+
+    {
+      "id": "arrow-1-2",
+      "type": "arrow",
+      "x": 345, "y": 270, "width": 80, "height": 0,
+      "points": [[0,0],[80,0]],
+      "startBinding": {"elementId": "card-1", "focus": 0.0, "gap": 5},
+      "endBinding":   {"elementId": "card-2", "focus": 0.0, "gap": 5},
+      "strokeColor": "#1e293b",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow",
+      "roughness": 1
+    },
+    {
+      "id": "conn-1-2",
+      "type": "text",
+      "x": 355, "y": 245,
+      "width": 60, "height": 22,
+      "text": "But",
+      "fontFamily": 1,
+      "fontSize": 18,
+      "textAlign": "center",
+      "strokeColor": "#991b1b"
+    },
+
+    {
+      "id": "card-2",
+      "type": "rectangle",
+      "x": 430, "y": 200,
+      "width": 240, "height": 140,
+      "strokeColor": "#991b1b",
+      "backgroundColor": "#fee2e2",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roundness": {"type": 3},
+      "roughness": 1
+    },
+    {
+      "id": "label-2",
+      "type": "text",
+      "x": 440, "y": 235,
+      "width": 220, "height": 70,
+      "text": "Trialy měřily kreatin\nve svalech, ne v mozku\n— MRS by uměla",
+      "fontFamily": 1,
+      "fontSize": 18,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "strokeColor": "#1e293b"
+    },
+
+    {
+      "id": "arrow-2-3",
+      "type": "arrow",
+      "x": 675, "y": 270, "width": 80, "height": 0,
+      "points": [[0,0],[80,0]],
+      "startBinding": {"elementId": "card-2", "focus": 0.0, "gap": 5},
+      "endBinding":   {"elementId": "card-3", "focus": 0.0, "gap": 5},
+      "strokeColor": "#1e293b",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow",
+      "roughness": 1
+    },
+    {
+      "id": "conn-2-3",
+      "type": "text",
+      "x": 685, "y": 245,
+      "width": 60, "height": 22,
+      "text": "Therefore",
+      "fontFamily": 1,
+      "fontSize": 18,
+      "textAlign": "center",
+      "strokeColor": "#1e40af"
+    },
+
+    {
+      "id": "card-3",
+      "type": "rectangle",
+      "x": 760, "y": 200,
+      "width": 240, "height": 140,
+      "strokeColor": "#1e40af",
+      "backgroundColor": "#dbeafe",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roundness": {"type": 3},
+      "roughness": 1
+    },
+    {
+      "id": "label-3",
+      "type": "text",
+      "x": 770, "y": 235,
+      "width": 220, "height": 70,
+      "text": "Žádná z trial nedokáže\ndoložit, že kreatin\nv mozku něco udělal",
+      "fontFamily": 1,
+      "fontSize": 18,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "strokeColor": "#1e293b"
+    },
+
+    {
+      "id": "arrow-3-4",
+      "type": "arrow",
+      "x": 1005, "y": 270, "width": 80, "height": 0,
+      "points": [[0,0],[80,0]],
+      "startBinding": {"elementId": "card-3", "focus": 0.0, "gap": 5},
+      "endBinding":   {"elementId": "card-4", "focus": 0.0, "gap": 5},
+      "strokeColor": "#1e293b",
+      "strokeWidth": 2,
+      "endArrowhead": "arrow",
+      "roughness": 1
+    },
+    {
+      "id": "conn-3-4",
+      "type": "text",
+      "x": 1010, "y": 245,
+      "width": 80, "height": 22,
+      "text": "Ironically",
+      "fontFamily": 1,
+      "fontSize": 18,
+      "textAlign": "center",
+      "strokeColor": "#6d28d9"
+    },
+
+    {
+      "id": "card-4",
+      "type": "rectangle",
+      "x": 1090, "y": 200,
+      "width": 240, "height": 140,
+      "strokeColor": "#065f46",
+      "backgroundColor": "#d1fae5",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roundness": {"type": 3},
+      "roughness": 1
+    },
+    {
+      "id": "label-4",
+      "type": "text",
+      "x": 1100, "y": 235,
+      "width": 220, "height": 70,
+      "text": "Brain claim drží jen\ntrhem — věda mezeru\nstále neuměří",
+      "fontFamily": 1,
+      "fontSize": 18,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "strokeColor": "#1e293b"
+    }
+  ],
+  "appState": {"viewBackgroundColor": "#ffffff", "gridSize": 20},
+  "files": {}
+}

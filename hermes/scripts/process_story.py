@@ -29,7 +29,19 @@ logger = logging.getLogger(__name__)
 STORY_CANVAS_DIR = Path.home() / "project" / "story-canvas"
 RENDER_SCRIPT = STORY_CANVAS_DIR / "references" / "render_excalidraw.py"
 UV_BIN = Path.home() / ".local" / "bin" / "uv"
-VAULT_VISUALS = Path.home() / "project" / "feynman-obsidian" / "Visualizations"
+def _default_vault_visuals() -> Path:
+    """Detekuje Feynman vault Visualizations adresář — Mac vs gpu1."""
+    candidates = [
+        Path.home() / "Obsidian" / "feynman" / "Visualizations",          # Mac
+        Path.home() / "project" / "feynman-obsidian" / "Visualizations",   # gpu1
+    ]
+    for c in candidates:
+        if c.parent.exists():
+            return c
+    return candidates[0]
+
+
+VAULT_VISUALS = _default_vault_visuals()
 
 # Gemini CLI
 GEMINI_CANDIDATES = [
@@ -412,6 +424,7 @@ def process(
     *,
     framework: str = "south-park",
     title_override: str | None = None,
+    slug_override: str | None = None,
     skip_telegram: bool = False,
     chat_id: str = DEFAULT_CHAT_ID,
     output_dir: Path = VAULT_VISUALS,
@@ -437,7 +450,7 @@ def process(
     logger.info("=== STEP 4: save files ===")
     output_dir.mkdir(parents=True, exist_ok=True)
     today = date.today().isoformat()
-    slug = slugify(title_override or spec.get("title_cs", "story"))
+    slug = slug_override or slugify(title_override or spec.get("title_cs", "story"))
     stem = f"{today}-{slug}"
     excal_path = output_dir / f"{stem}.excalidraw"
     png_path = output_dir / f"{stem}.png"
@@ -477,6 +490,7 @@ def main() -> int:
         default="south-park",
     )
     ap.add_argument("--title", default=None, help="přepiš titulek")
+    ap.add_argument("--slug", default=None, help="přepiš slug (filename stem)")
     ap.add_argument("--output-dir", type=Path, default=VAULT_VISUALS)
     ap.add_argument("--skip-telegram", action="store_true")
     ap.add_argument("--telegram-target", default=DEFAULT_CHAT_ID)
@@ -488,6 +502,7 @@ def main() -> int:
             args.source,
             framework=args.framework,
             title_override=args.title,
+            slug_override=args.slug,
             skip_telegram=args.skip_telegram,
             chat_id=args.telegram_target,
             output_dir=args.output_dir,

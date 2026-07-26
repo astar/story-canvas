@@ -12,3 +12,4 @@ references/.cache/
 
 # Editor swap
 *.swp
+data/cipher-sessions.db*

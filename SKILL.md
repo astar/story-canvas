@@ -310,3 +310,10 @@ Vždy je možnost — neříkej "to nejde". Excalidraw JSON je plně přepsateln
 - South Park storytelling secret: Stone & Parker přednáška NYU 2011
 - Tutorial co inspiroval: youtu.be/nUIm3lqwnWU (Zsolt's Visual PKM)
 - Renderer používá Playwright + load excalidraw.com offline → screenshot
+
+## ⚠️ Povinná kontrola před odevzdáním
+
+Každý vyrenderovaný vizuál projdi skillem **`vizualni-kontrola`**
+(`~/.claude/skills/vizualni-kontrola/SKILL.md`): render → **podívej se na PNG** → hledej
+text přes čáry/značky, kolize popisků, přetečení okrajů a popisky, které nesouhlasí
+s přepočítanými čísly → oprav → re-render. Vygenerovat ≠ hotovo.
